@@ -1,0 +1,447 @@
+/**{box-sizing: border-box;}*/
+body {
+  min-width: 100%;
+  background-color: white;
+  margin: 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: black;
+  margin-top: 0px;
+  padding: 0.5px;
+  color: #fff;
+  max-width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /*border: 1px solid red;*/
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: -17px 45px -16.5px -40px;
+  padding: 16.5px;
+  /*border: 1px solid red;*/
+}
+
+nav ul li:hover {
+  background-color: grey;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  /*border: 1px solid red;*/
+}
+
+nav ul .more {
+  position: relative;
+}
+
+nav ul .more:hover .moreitems {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  color: #fff;
+}
+
+nav .moreitems {
+  display: none;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 0;
+  width: 200%;
+}
+
+nav .moreitems li {
+  display: block;
+  margin-left: 0;
+  width: 89%;
+  padding: 8px 10px;
+  margin: 0;
+  /*border: 1px solid green;*/
+}
+
+nav .moreitems li:hover {
+  background: honeydew;
+  color: #333;
+}
+
+nav .material-icons {
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /*border: 1px solid blue;*/
+}
+
+nav .material-icons:hover {
+  background: #ec2929;
+}
+
+#images {
+  max-width: 100%;
+  min-height: 680px;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+  top: -35px;
+  padding: 0;
+  /*background-image: url('../images/band1.jpg');*/
+  background-origin: padding-box;
+  background-size: 100% 680px;
+  background-repeat: no-repeat;
+  /*border: 1px solid gold;*/
+  -webkit-animation: bgimg 10s infinite 0s;
+          animation: bgimg 10s infinite 0s;
+  -webkit-animation-timing-function: steps(2, jump-none);
+          animation-timing-function: steps(2, jump-none);
+}
+
+#images .text {
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+  visibility: hidden;
+}
+
+#images #new {
+  -webkit-animation: visi1 10s steps(2, jump-none) infinite;
+          animation: visi1 10s steps(2, jump-none) infinite;
+}
+
+#images #chi {
+  -webkit-animation: visi2 10s steps(2, jump-none) infinite;
+          animation: visi2 10s steps(2, jump-none) infinite;
+}
+
+#images #los {
+  -webkit-animation: visi3 10s steps(2, jump-none) infinite;
+          animation: visi3 10s steps(2, jump-none) infinite;
+}
+
+@-webkit-keyframes bgimg {
+  0% {
+    background-image: url("../images/band1.jpg");
+  }
+  50% {
+    background-image: url("../images/band2.jpg");
+  }
+  100% {
+    background-image: url("../images/Eagles 62.jpg");
+  }
+}
+
+@keyframes bgimg {
+  0% {
+    background-image: url("../images/band1.jpg");
+  }
+  50% {
+    background-image: url("../images/band2.jpg");
+  }
+  100% {
+    background-image: url("../images/Eagles 62.jpg");
+  }
+}
+
+@-webkit-keyframes visi1 {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+}
+
+@keyframes visi1 {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes visi2 {
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes visi2 {
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes visi3 {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes visi3 {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.h1 {
+  max-width: 50%;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+
+.we {
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 4em;
+  font-style: oblique;
+  color: #a18383;
+  /*border: 1px solid red;*/
+  padding: 0;
+}
+
+#band {
+  text-align: center;
+  padding: 80px 300px;
+  /*border: 1px solid red;*/
+  margin-top: -35px;
+}
+
+#band .plenty {
+  text-align: justify;
+  line-height: 1.5em;
+  margin-top: -7px;
+}
+
+#band .grapher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /* border: 1px solid red;*/
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#band .grapher figure {
+  margin-bottom: 30px;
+}
+
+#band .grapher figure figcaption {
+  margin-bottom: 15px;
+}
+
+#band .grapher figure img {
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#tour {
+  text-align: center;
+  padding: 80px 300px;
+  background: black;
+}
+
+#tour .three:not(:last-child) {
+  border-bottom: 1px solid #817979;
+}
+
+#tour .three {
+  background-color: white;
+  color: #817979;
+  padding: 12px;
+  margin-bottom: -15px;
+  text-align: left;
+  position: relative;
+  font-size: 15px;
+}
+
+#tour .three span {
+  background-color: #f50b0b;
+  color: white;
+  margin-left: 15px;
+  padding: 5px 7px;
+  font-size: 15px;
+}
+
+#tour .three #span3 {
+  display: inline-block;
+  color: white;
+  border-radius: 100%;
+  width: 15px;
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  background: black;
+}
+
+#tour .buildings {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  margin-top: 40px;
+  grid-gap: 0 15px;
+  /*border: 1px solid $color1;*/
+}
+
+#tour .buildings .inside {
+  background: white;
+  /*border: 1px solid red;*/
+}
+
+#tour .buildings .inside img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#tour .buildings .inside .writing {
+  text-align: left;
+  font-size: 15px;
+  padding: 0px 15px;
+  margin-top: -4px;
+  /*border: 1px solid red;*/
+  padding-bottom: 10px;
+}
+
+#tour .buildings .inside .writing p:nth-child(even) {
+  color: #817979;
+}
+
+#tour .buildings .inside .writing a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin-top: 0px;
+}
+
+#contact {
+  padding: 80px 300px;
+  text-align: center;
+}
+
+#contact h1 + p {
+  margin-top: -15px;
+}
+
+#contact #contactelements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*border: 1px solid red;*/
+  margin-bottom: 50px;
+  margin-top: 30px;
+  position: relative;
+  /*&::after{
+            content: "";
+            clear: both;
+            display: table;
+        }*/
+}
+
+#contact #contactelements .findus {
+  line-height: 1.7em;
+  text-align: left;
+}
+
+#contact #contactelements .findus span {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#contact #contactelements form {
+  /*border: 1px solid rgb(0, 255, 85);*/
+  position: relative;
+}
+
+#contact #contactelements form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#contact #contactelements form [placeholder="Email"] {
+  margin-left: 10px;
+}
+
+#contact #contactelements form [name="message"] {
+  margin-top: 10px;
+  width: 92.5%;
+}
+
+#contact #contactelements form input {
+  padding: 13px;
+  border: 1px solid silver;
+}
+
+#contact #contactelements form [type="submit"] {
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background-color: black;
+  color: #fff;
+  border-style: none;
+}
+
+#contact #contactelements form [type="submit"]:hover {
+  background-color: gray;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    font-size: smaller;
+  }
+}
+/*# sourceMappingURL=learning.css.map */
