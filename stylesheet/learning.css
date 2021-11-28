@@ -443,10 +443,15 @@ nav .material-icons:hover {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    place-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 0.5rem;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
+    -webkit-transform: scale(1em);
+            transform: scale(1em);
     resize: both;
   }
   body::after {

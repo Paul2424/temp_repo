@@ -393,9 +393,10 @@ padding: 0;
 body{
     text-align: center;
     display: grid;
-    place-content: center;
+    justify-content: left;
+    align-items: center;
     font-size: 0.5rem;
-    transform: scaleX(0.5);
+    transform: scale(1em);
     resize: both;
     //border: 1px solid red;
     //padding: 10px;
