@@ -392,8 +392,12 @@ padding: 0;
 body{
     text-align: center;
     display: grid;
-    font-size: smaller;
+    font-size: 5px;
     resize: both;
+
+    [name="viewport"]{
+        scale: 0.5px;
+    }
 }
 }
 
@@ -406,4 +410,6 @@ body{
         resize: both;
         padding: auto 0px;
     }
+
+
     }

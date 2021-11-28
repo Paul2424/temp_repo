@@ -441,8 +441,11 @@ nav .material-icons:hover {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    font-size: smaller;
+    font-size: 5px;
     resize: both;
+  }
+  body [name="viewport"] {
+    scale: 0.5px;
   }
 }
 
