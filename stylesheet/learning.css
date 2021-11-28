@@ -444,12 +444,12 @@ nav .material-icons:hover {
     width: 200px;
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: justify;
+        -ms-flex-align: justify;
+            align-items: justify;
     font-size: 0.5rem;
     -webkit-transform: scale(1em);
             transform: scale(1em);
