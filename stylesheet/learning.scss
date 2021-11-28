@@ -314,7 +314,7 @@ padding: 0;
 #contact{
     @include padding;
     text-align: center;
-
+    background-color: rgb(161, 131, 131);
     h1+p{
         margin-top: -15px;
     }
@@ -393,19 +393,30 @@ padding: 0;
 body{
     text-align: center;
     display: grid;
-    font-size: 15px;
+    place-content: center;
+    font-size: 0.5rem;
+    transform: scaleX(0.5);
     resize: both;
-    padding: 10px;
+    //border: 1px solid red;
+    //padding: 10px;
 }
 
-*{
-    text-align: center;
-    max-width: 500px;
+body::after{
+content: "";
+clear: both;
+display: table;
 }
 
-[name="viewport"]{
-    transform:scale(0.5) ;
+#images{
+display: none;
 }
+
+.material-icons{
+    position: relative;
+    top: -15px;
+    font-size: smaller;
+}
+
 }
 
 @media screen and (min-width: 100%){
@@ -413,9 +424,16 @@ body{
     body{
         text-align: center;
         display: grid;
-        font-size: smaller;
+        place-items: center;
+        padding-block-end: 0;
+        font-size: 0.5rem;
         resize: both;
         padding: auto 0px;
+        
+    }
+
+    *{
+        padding: 10px 0;
     }
 
 
