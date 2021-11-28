@@ -74,6 +74,7 @@ nav .moreitems li {
 nav .moreitems li:hover {
   background: honeydew;
   color: #333;
+  width: auto;
 }
 
 nav .material-icons {
@@ -441,11 +442,17 @@ nav .material-icons:hover {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    font-size: 5px;
+    font-size: 15px;
     resize: both;
+    padding: 10px;
   }
-  body [name="viewport"] {
-    scale: 0.5px;
+  * {
+    text-align: center;
+    max-width: 500px;
+  }
+  [name="viewport"] {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
 }
 

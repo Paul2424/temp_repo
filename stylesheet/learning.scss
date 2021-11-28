@@ -88,6 +88,7 @@ nav{
             &:hover{
                 background: honeydew;
                 color: text-color(honeydew);
+                width: auto;
             }
         }
 
@@ -392,12 +393,18 @@ padding: 0;
 body{
     text-align: center;
     display: grid;
-    font-size: 5px;
+    font-size: 15px;
     resize: both;
+    padding: 10px;
+}
 
-    [name="viewport"]{
-        scale: 0.5px;
-    }
+*{
+    text-align: center;
+    max-width: 500px;
+}
+
+[name="viewport"]{
+    transform:scale(0.5) ;
 }
 }
 
