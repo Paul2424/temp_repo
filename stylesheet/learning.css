@@ -442,6 +442,18 @@ nav .material-icons:hover {
     display: -ms-grid;
     display: grid;
     font-size: smaller;
+    resize: both;
+  }
+}
+
+@media screen and (min-width: 100%) {
+  body {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    font-size: smaller;
+    resize: both;
+    padding: auto 0px;
   }
 }
 /*# sourceMappingURL=learning.css.map */
