@@ -392,6 +392,8 @@ padding: 0;
 
 body{
     text-align: center;
+    width: 200px;
+
     display: grid;
     justify-content: left;
     align-items: center;
@@ -408,6 +410,10 @@ clear: both;
 display: table;
 }
 
+*{
+    transform: scaleX(0.5rem);
+}
+
 #images{
 display: none;
 }
@@ -416,6 +422,10 @@ display: none;
     position: relative;
     top: -15px;
     font-size: smaller;
+}
+
+nav {
+    padding-bottom: 8px;
 }
 
 }

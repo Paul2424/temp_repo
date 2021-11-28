@@ -441,6 +441,7 @@ nav .material-icons:hover {
 @media screen and (max-width: 500px) {
   body {
     text-align: center;
+    width: 200px;
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: left;
@@ -459,6 +460,10 @@ nav .material-icons:hover {
     clear: both;
     display: table;
   }
+  * {
+    -webkit-transform: scaleX(0.5rem);
+            transform: scaleX(0.5rem);
+  }
   #images {
     display: none;
   }
@@ -466,6 +471,9 @@ nav .material-icons:hover {
     position: relative;
     top: -15px;
     font-size: smaller;
+  }
+  nav {
+    padding-bottom: 8px;
   }
 }
 
