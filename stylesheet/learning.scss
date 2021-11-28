@@ -395,8 +395,8 @@ body{
     width: 200px;
 
     display: grid;
-    justify-content: center;
-    align-items: justify;
+    place-content: center;
+    place-items: center;
     font-size: 0.5rem;
     transform: scale(1em);
     resize: both;
