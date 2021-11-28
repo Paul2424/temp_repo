@@ -442,14 +442,13 @@ nav .material-icons:hover {
   body {
     text-align: center;
     width: 200px;
-    margin-left: 15rem;
-    display: -ms-grid;
-    display: grid;
-    place-content: center;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    place-content: right;
     place-items: center;
     font-size: 0.5rem;
-    -webkit-transform: scale(1em);
-            transform: scale(1em);
+    -webkit-transform: scale(2em);
+            transform: scale(2em);
     resize: both;
   }
   body::after {

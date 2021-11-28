@@ -393,12 +393,12 @@ padding: 0;
 body{
     text-align: center;
     width: 200px;
-    margin-left: 15rem;
-    display: grid;
-    place-content: center;
+   // margin-left: 15rem;
+    display: inline-grid;
+    place-content: right;
     place-items: center;
     font-size: 0.5rem;
-    transform: scale(1em);
+    transform: scale(2em);
     resize: both;
     //border: 1px solid red;
     //padding: 10px;
